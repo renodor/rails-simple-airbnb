@@ -1,0 +1,12 @@
+<div class="container mt-5 small-container bg-light">
+  <h1>Create a New Flat</h1>
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :image_url %>
+    <%= f.submit %>
+  <% end %>
+</div>

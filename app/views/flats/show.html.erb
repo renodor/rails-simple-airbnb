@@ -1,0 +1,30 @@
+<div class="flat-banner" style="background-image: url(<%= @flat.image_url %>)">
+
+</div>
+
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="card-flat-page">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="card-flat-page">
+        <h3>More info</h3>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="card-flat-page">
+        <h3>Details</h3>
+        <ul class="list-inline">
+          <li class="list-inline-item"><i class="fas fa-users"></i> <%= @flat.number_of_guests %></li>
+          <li class="list-inline-item"><i class="fas fa-dollar-sign"></i> <%= @flat.price_per_night %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4">
+
+    </div>
+  </div>
+</div>
